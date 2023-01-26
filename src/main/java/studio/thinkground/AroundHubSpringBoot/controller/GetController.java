@@ -28,14 +28,11 @@ public class GetController {
 
     // http://localhost:8080/api/v1/get-api/variable2/{String 값}
     @GetMapping(value = "/variable2/{variable}")
-    public String getVariable2(@PathVariable String var){
+    public String getVariable2(@PathVariable("variable") String var){
         return var;
     }
 
-    // http://localhost:8080/api/v1/get-api/request1?
-    // name=YeJi&
-    // email=thinkground.21900806@handong.ac.kr&
-    // organization=thinkground
+    // http://localhost:8080/api/v1/get-api/request1?name=YeJi&email=thinkground.21900806@handong.ac.kr&organization=thinkground
     @GetMapping(value = "/request1")
     public String getRequestParam1(
             @RequestParam String name,
@@ -57,7 +54,7 @@ public class GetController {
         return sb.toString();
     }
 
-    // http://localhost:8080/api/v1/get-api/request2?name=YeJi?email=21900806@handong.ac.kr&organization=thinkground
+    // http://localhost:8080/api/v1/get-api/request3?name=YeJi&email=21900806@handong.ac.kr&organization=thinkground
     @GetMapping(value = "/request3")
     public String getRequestParam3(MemberDTO memberDTO){
         // return memberDTO.getName() + " " + memberDTO.getEmail() + " " + memberDTO.getOrganization()

@@ -11,13 +11,21 @@ import studio.thinkground.AroundHubSpringBoot.dto.MemberDTO;
 @RequestMapping("/api/v1/post-api")
 public class PostController {
 
-    // http://localhost:8080/api/v1/post-api/default
+    // http://localhost:9090/api/v1/post-api/default
     @PostMapping(value = "/default")
     public String postMethod() {
         return "Hello World!";
     }
 
-    // http://localhost:8080/api/v1/post-api/member
+    // http://localhost:9090/api/v1/post-api/member
+    /* body
+    {
+        "name" : "yeji",
+        "email" : "21900806@handong.ac.kr",
+        "organization" : "Around Hub Studio"
+    }
+    */
+
     @PostMapping(value = "/member")
     public String postMember(@RequestBody Map<String, Object> postData) {
         StringBuilder sb = new StringBuilder();
@@ -33,7 +41,14 @@ public class PostController {
         return sb.toString();
     }
 
-    // http://localhost:8080/api/v1/post-api/member2
+    // http://localhost:9090/api/v1/post-api/member2
+    /* body
+    {
+        "name" : "yeji",
+        "email" : "21900806@handong.ac.kr",
+        "organization" : "Around Hub Studio"
+    }
+    */
     @PostMapping(value = "/member2")
     public String postMemberDto(@RequestBody MemberDTO memberDTO) {
         return memberDTO.toString();

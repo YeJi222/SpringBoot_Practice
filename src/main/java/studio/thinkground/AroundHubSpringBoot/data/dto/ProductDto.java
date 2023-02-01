@@ -1,15 +1,10 @@
 package studio.thinkground.AroundHubSpringBoot.data.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
 import studio.thinkground.AroundHubSpringBoot.data.entity.ProductEntity;
-
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
 
 @Data
 @NoArgsConstructor
@@ -24,7 +19,7 @@ public class ProductDto {
     private String productName;
     @NotNull
     @Min(value = 50)
-    @Max(value = 9999)
+    @Max(value = 3000000)
     private int productPrice;
     @NotNull
     @Min(value = 0)

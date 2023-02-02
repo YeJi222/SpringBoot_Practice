@@ -6,11 +6,12 @@ package studio.thinkground.AroundHubSpringBoot.controller;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import studio.thinkground.AroundHubSpringBoot.common.Constants;
+import studio.thinkground.AroundHubSpringBoot.common.exception.AroundHubException;
 import studio.thinkground.AroundHubSpringBoot.data.dto.ProductDto;
 import studio.thinkground.AroundHubSpringBoot.data.service.ProductService;
 
@@ -64,5 +65,11 @@ public class ProductController {
     @DeleteMapping(value = "/product/{productId}")
     public ProductDto deleteProduct(@PathVariable String productId) {
         return null;
+    }
+
+    // http://localhost:9090/api/v1/product-api/product/exception
+    @PostMapping(value = "/product/exception")
+    public void exceptionTest() throws AroundHubException{
+        throw new AroundHubException(Constants.ExceptionClass.PRODUCT, HttpStatus.BAD_REQUEST, "의도한 에러가 발생하였습니다.");
     }
 }

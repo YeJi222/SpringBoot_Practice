@@ -1,11 +1,11 @@
-package studio.thinkground.AroundHubSpringBoot.data.service.impl;
+package studio.thinkground.AroundHubSpringBoot.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import studio.thinkground.AroundHubSpringBoot.data.dto.ProductDto;
 import studio.thinkground.AroundHubSpringBoot.data.entity.ProductEntity;
 import studio.thinkground.AroundHubSpringBoot.data.handler.ProductDataHandler;
-import studio.thinkground.AroundHubSpringBoot.data.service.ProductService;
+import studio.thinkground.AroundHubSpringBoot.service.ProductService;
 
 @Service
 public class ProductServiceImpl implements ProductService {

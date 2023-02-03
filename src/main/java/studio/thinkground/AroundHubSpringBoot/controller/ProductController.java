@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import studio.thinkground.AroundHubSpringBoot.common.Constants;
 import studio.thinkground.AroundHubSpringBoot.common.exception.AroundHubException;
 import studio.thinkground.AroundHubSpringBoot.data.dto.ProductDto;
-import studio.thinkground.AroundHubSpringBoot.data.service.ProductService;
+import studio.thinkground.AroundHubSpringBoot.service.ProductService;
 
 
 @RestController

@@ -1,4 +1,4 @@
-package studio.thinkground.AroundHubSpringBoot.data.service;
+package studio.thinkground.AroundHubSpringBoot.service;
 
 import studio.thinkground.AroundHubSpringBoot.data.dto.ProductDto;
 

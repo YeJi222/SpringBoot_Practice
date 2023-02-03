@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import studio.thinkground.AroundHubSpringBoot.dto.MemberDTO;
+import studio.thinkground.AroundHubSpringBoot.service.RestTemplateService;
 
 @RestController
 @RequestMapping("/api/rest-template")

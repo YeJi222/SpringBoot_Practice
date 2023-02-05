@@ -1,4 +1,4 @@
-package studio.thinkground.AroundHub_SpringBoot;
+package studio.thinkground.AroundHubSpringBoot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package studio.thinkground.AroundHub_SpringBoot.service.impl;
+package studio.thinkground.AroundHubSpringBoot.service.impl;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import studio.thinkground.AroundHubSpringBoot.data.dto.ProductDto;
 import studio.thinkground.AroundHubSpringBoot.data.entity.ProductEntity;
 import studio.thinkground.AroundHubSpringBoot.data.handler.impl.ProductDataHandlerImpl;
-import studio.thinkground.AroundHubSpringBoot.service.impl.ProductServiceImpl;
 
 import static org.mockito.Mockito.verify;
 

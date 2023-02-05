@@ -1,4 +1,4 @@
-package studio.thinkground.AroundHub_SpringBoot.controller;
+package studio.thinkground.AroundHubSpringBoot.controller;
 
 import com.google.gson.Gson;
 import org.junit.jupiter.api.DisplayName;
@@ -8,7 +8,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import studio.thinkground.AroundHubSpringBoot.controller.ProductController;
 import studio.thinkground.AroundHubSpringBoot.data.dto.ProductDto;
 import studio.thinkground.AroundHubSpringBoot.service.impl.ProductServiceImpl;
 

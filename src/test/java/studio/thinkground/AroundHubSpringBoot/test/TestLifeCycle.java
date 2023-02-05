@@ -1,4 +1,4 @@
-package studio.thinkground.AroundHub_SpringBoot.test;
+package studio.thinkground.AroundHubSpringBoot.test;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;

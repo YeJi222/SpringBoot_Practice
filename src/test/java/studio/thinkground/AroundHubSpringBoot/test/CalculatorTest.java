@@ -13,7 +13,7 @@ public class CalculatorTest {
     public void addTest(){
         int actual = calculator.add(1, 2);
         int expected = 3;
-        
+
         assertThat(actual, is(expected));
     }
 
